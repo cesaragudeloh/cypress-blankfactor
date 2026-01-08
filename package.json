@@ -1,17 +1,21 @@
 {
   "name": "cypress-blankfactor",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "Automation project for blankfactor flow",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test:navigation": "cypress run --spec 'cypress/e2e/features/blankfactor.feature'",
+    "cypress:open": "cypress open",
+    "headed": "cypress run --headed --browser chrome"
   },
   "private": true,
   "keywords": [],
-  "author": "",
+  "author": "Cesar Agudelo",
   "license": "ISC",
   "type": "commonjs",
   "devDependencies": {
-    "cypress": "^15.8.2"
+    "@badeball/cypress-cucumber-preprocessor": "^24.0.0",
+    "@bahmutov/cypress-esbuild-preprocessor": "^2.2.8",
+    "cypress": "^15.8.2",
+    "cypress-real-events": "^1.15.0"
   }
 }
