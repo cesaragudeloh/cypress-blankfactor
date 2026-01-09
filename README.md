@@ -34,7 +34,7 @@ This project is an end-to-end (E2E) automation test using **Cypress**, written w
 ├── cypress.config.js                      # Cypress Main Configuration
 ├── package.json                           # Dependencies and scripts
 ├── package-lock.json
-└── README.md                              # Global config (error handler, etc.)
+└── README.md
 ```
 
 ## Automated Flow
