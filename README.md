@@ -19,18 +19,22 @@ This project is an end-to-end (E2E) automation test using **Cypress**, written w
 ## Project Structure
 
 ```
-cypress/
-├── e2e/
-│   └── features/
-│       └── blankfactor.feature        # Gherkin scenario
-├── fixtures/
-│       └── example.json               # Data file (if needed)
-├── support/
-│   ├── step_definitions/
-│   │   └── blankfactor.cy.js          # Step definitions
-│   ├── pages/
-│   │   └── HomePage.js                # Page Object methods
-│   └── e2e.js                         # Global config (error handler, etc.)
+├── cypress/
+│   ├── e2e/
+│   │   └── features/
+│   │       └── blankfactor.feature        #  Gherkin scenario(.feature)
+│   └── support/
+│       ├── pages/
+│       │   └── HomePage.js                # Page Objects (POM)
+│       ├── step_definitions/
+│       │   └── blankfactor.cy.js          # Step Definitions
+│       └── e2e.js                         # Global configuration and hooks
+├── docs/                                  # Aditional project documentation
+├── .gitignore
+├── cypress.config.js                      # Cypress Main Configuration
+├── package.json                           # Dependencies and scripts
+├── package-lock.json
+└── README.md                              # Global config (error handler, etc.)
 ```
 
 ## Automated Flow
